@@ -1,6 +1,7 @@
 enum Problem: String {
     case hello = "hello"
 	case findUnsortedSubarray = "shortestUnsortedContinuousSubarray"
+	case addDigits = "addDigits"
 }
 
 class Solution {
@@ -10,13 +11,16 @@ class Solution {
         case .hello:
             Solution().hello()
             break
-		case .findUnsortedSubarray :
+		case .findUnsortedSubarray:
 			print("Example: [1, 3, 5, 7, 2, 4, 5, 6]")
 			print(Solution().findUnsortedSubarray([1, 3, 5, 7, 2, 4, 5, 6]))
 			break
+		case .addDigits:
+			print("Example: 1234567")
+			print(Solution().addDigits(1234567))
+			break
         }
     }
-    
 }
 
 /**

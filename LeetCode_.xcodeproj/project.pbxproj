@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7300BBC621CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */; };
+		7300BBD821CBA1A9004706BA /* AddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300BBD721CBA1A9004706BA /* AddDigits.swift */; };
 		91CE9FBB21CA075E006B3498 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9FB921CA075E006B3498 /* Hello.swift */; };
 		91CE9FBC21CA075E006B3498 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9FBA21CA075E006B3498 /* main.swift */; };
 		OBJ_25 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
@@ -15,6 +16,7 @@
 
 /* Begin PBXFileReference section */
 		7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestUnsortedContinuousSubarray.swift; sourceTree = "<group>"; };
+		7300BBD721CBA1A9004706BA /* AddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDigits.swift; sourceTree = "<group>"; };
 		91CE9FB921CA075E006B3498 /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		91CE9FBA21CA075E006B3498 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		"LeetCode_::LeetCode_::Product" /* LeetCode_ */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode_; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,6 +42,14 @@
 			path = 581.ShortestUnsortedContinuousSubarray;
 			sourceTree = "<group>";
 		};
+		7300BBD621CBA18E004706BA /* 258.AddDigits */ = {
+			isa = PBXGroup;
+			children = (
+				7300BBD721CBA1A9004706BA /* AddDigits.swift */,
+			);
+			path = 258.AddDigits;
+			sourceTree = "<group>";
+		};
 		91CE9FB621CA075E006B3498 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +61,7 @@
 		91CE9FB721CA075E006B3498 /* LeetCode_ */ = {
 			isa = PBXGroup;
 			children = (
+				7300BBD621CBA18E004706BA /* 258.AddDigits */,
 				7300BBC421CB2C48004706BA /* 581.ShortestUnsortedContinuousSubarray */,
 				91CE9FB821CA075E006B3498 /* Hello */,
 				91CE9FBA21CA075E006B3498 /* main.swift */,
@@ -156,6 +167,7 @@
 			buildActionMask = 0;
 			files = (
 				91CE9FBC21CA075E006B3498 /* main.swift in Sources */,
+				7300BBD821CBA1A9004706BA /* AddDigits.swift in Sources */,
 				7300BBC621CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift in Sources */,
 				91CE9FBB21CA075E006B3498 /* Hello.swift in Sources */,
 			);
