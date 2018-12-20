@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7300BBC621CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */; };
 		91CE9FBB21CA075E006B3498 /* Hello.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9FB921CA075E006B3498 /* Hello.swift */; };
 		91CE9FBC21CA075E006B3498 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91CE9FBA21CA075E006B3498 /* main.swift */; };
 		OBJ_25 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestUnsortedContinuousSubarray.swift; sourceTree = "<group>"; };
 		91CE9FB921CA075E006B3498 /* Hello.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hello.swift; sourceTree = "<group>"; };
 		91CE9FBA21CA075E006B3498 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		"LeetCode_::LeetCode_::Product" /* LeetCode_ */ = {isa = PBXFileReference; lastKnownFileType = text; path = LeetCode_; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,6 +32,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7300BBC421CB2C48004706BA /* 581.ShortestUnsortedContinuousSubarray */ = {
+			isa = PBXGroup;
+			children = (
+				7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */,
+			);
+			path = 581.ShortestUnsortedContinuousSubarray;
+			sourceTree = "<group>";
+		};
 		91CE9FB621CA075E006B3498 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -41,6 +51,7 @@
 		91CE9FB721CA075E006B3498 /* LeetCode_ */ = {
 			isa = PBXGroup;
 			children = (
+				7300BBC421CB2C48004706BA /* 581.ShortestUnsortedContinuousSubarray */,
 				91CE9FB821CA075E006B3498 /* Hello */,
 				91CE9FBA21CA075E006B3498 /* main.swift */,
 			);
@@ -70,7 +81,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -78,7 +89,6 @@
 				OBJ_10 /* Tests */,
 				OBJ_11 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +139,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_11 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -146,6 +156,7 @@
 			buildActionMask = 0;
 			files = (
 				91CE9FBC21CA075E006B3498 /* main.swift in Sources */,
+				7300BBC621CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift in Sources */,
 				91CE9FBB21CA075E006B3498 /* Hello.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,6 @@
 enum Problem: String {
     case hello = "hello"
+	case findUnsortedSubarray = "shortestUnsortedContinuousSubarray"
 }
 
 class Solution {
@@ -9,6 +10,10 @@ class Solution {
         case .hello:
             Solution().hello()
             break
+		case .findUnsortedSubarray :
+			print("Example: [1, 3, 5, 7, 2, 4, 5, 6]")
+			print(Solution().findUnsortedSubarray([1, 3, 5, 7, 2, 4, 5, 6]))
+			break
         }
     }
     
