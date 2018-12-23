@@ -2,6 +2,7 @@ enum Problem: String {
     case hello = "hello"
 	case findUnsortedSubarray = "shortestUnsortedContinuousSubarray"
 	case addDigits = "addDigits"
+	case minimumMovesToEqual = "minMoves"
 }
 
 class Solution {
@@ -19,6 +20,9 @@ class Solution {
 			print("Example: 1234567")
 			print(Solution().addDigits(1234567))
 			break
+		case .minimumMovesToEqual:
+			print("Example: [1, 2, 3]")
+			print(Solution().minMoves([1, 2, 3]))
         }
     }
 }
