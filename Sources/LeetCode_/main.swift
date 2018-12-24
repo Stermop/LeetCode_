@@ -3,6 +3,7 @@ enum Problem: String {
 	case findUnsortedSubarray = "shortestUnsortedContinuousSubarray"
 	case addDigits = "addDigits"
 	case minimumMovesToEqual = "minMoves"
+    case nonDecreasingArray = "nonDecreasing"
 }
 
 class Solution {
@@ -23,6 +24,9 @@ class Solution {
 		case .minimumMovesToEqual:
 			print("Example: [1, 2, 3]")
 			print(Solution().minMoves([1, 2, 3]))
+        case .nonDecreasingArray:
+            print("Example: [4, 2, 3]")
+            print(Solution().nonDecreasing([4, 2, 3]))
         }
     }
 }
