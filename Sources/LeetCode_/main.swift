@@ -4,6 +4,7 @@ enum Problem: String {
 	case addDigits = "addDigits"
 	case minimumMovesToEqual = "minMoves"
     case nonDecreasingArray = "nonDecreasing"
+    case validPalindrome = "validPalindrome"
 }
 
 class Solution {
@@ -27,6 +28,9 @@ class Solution {
         case .nonDecreasingArray:
             print("Example: [4, 2, 3]")
             print(Solution().nonDecreasing([4, 2, 3]))
+        case .validPalindrome:
+            print("Example: A man, a plan, a canal: Panama")
+            print(Solution().isPalindrome("A man, a plan, a canal: Panama"))
         }
     }
 }
