@@ -81,7 +81,7 @@ extension Solution {
         let head = (i == 0)              ? Int.min : nums[i-1]
         let next = (j == nums.count - 1) ? Int.max : nums[j+1]
         
-        if j - i <= 1 && (head < nums[j] || nums[i] < next) {
+        if j - i <= 1 && (head <= nums[j] || nums[i] <= next) {
             return true
         } else {
             return false
