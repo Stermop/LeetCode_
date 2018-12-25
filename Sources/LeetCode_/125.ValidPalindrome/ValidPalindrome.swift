@@ -4,7 +4,7 @@
 //
 //  Created by 韩元旭 on 2018/12/24.
 //
-//  https://leetcode-cn.com/problems/valid-palindrome/
+//  https://leetcode.com/problems/valid-palindrome/
 
 import Foundation
 

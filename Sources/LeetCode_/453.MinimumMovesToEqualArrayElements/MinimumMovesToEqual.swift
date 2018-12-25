@@ -4,7 +4,7 @@
 //
 //  Created by 韩元旭 on 2018/12/23.
 //
-//	https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements/
+//	https://leetcode.com/problems/minimum-moves-to-equal-array-elements/
 
 
 import Foundation
