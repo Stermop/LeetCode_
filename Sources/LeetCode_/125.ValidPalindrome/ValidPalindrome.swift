@@ -131,5 +131,56 @@ extension Solution {
         
         return true
     }
-    
+	
+	
+	
+	/*
+	1. 过滤空格
+	2. 小写转换，数组转换
+	3. 过滤非字母和非数字
+	4. 反转数组
+	5. 各位比较
+	*/
+	func isPalindrome3(_ s: String) -> Bool {
+		let nonSpaceS = s.replacingOccurrences(of: " ", with: "", options: .literal, range: nil)
+		if nonSpaceS.isEmpty {
+			return true
+		}
+		
+		let aryS: [String] = nonSpaceS.lowercased().map { String($0) }
+		let letterAry = aryS.filter { $0.isLetter() || $0.isNumber() }
+		if letterAry.isEmpty {
+			return true
+		}
+		
+		let reverseAry: [String] = letterAry.reversed()
+		
+		for index in 0..<letterAry.count {
+			if letterAry[index] != reverseAry[index] {
+				return false
+			}
+		}
+		
+		return true
+	}
+}
+
+extension String {
+	func isLetter() -> Bool {
+		if self.count == 1 {
+			if self >= "a" && self <= "z" {
+				return true
+			}
+		}
+		return false
+	}
+	
+	func isNumber() -> Bool {
+		if self.count == 1 {
+			if self >= "0" && self <= "9" {
+				return true
+			}
+		}
+		return false
+	}
 }
