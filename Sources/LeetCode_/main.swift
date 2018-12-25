@@ -5,6 +5,7 @@ enum Problem: String {
 	case minimumMovesToEqual = "minMoves"
     case nonDecreasingArray = "nonDecreasing"
     case validPalindrome = "validPalindrome"
+    case flippingAnImage = "flippingAnImage"
 }
 
 class Solution {
@@ -31,6 +32,9 @@ class Solution {
         case .validPalindrome:
             print("Example: A man, a plan, a canal: Panama")
             print(Solution().isPalindrome("A man, a plan, a canal: Panama"))
+        case .flippingAnImage:
+            print("Example: [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]")
+            print(Solution().flipAndInvertImage([[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]))
         }
     }
 }
