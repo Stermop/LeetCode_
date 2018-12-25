@@ -4,7 +4,7 @@
 //
 //  Created by 韩元旭 on 2018/12/25.
 //
-//  https://leetcode-cn.com/problems/flipping-an-image/
+//  https://leetcode.com/problems/flipping-an-image/
 
 import Foundation
 
