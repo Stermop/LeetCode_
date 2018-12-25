@@ -6,6 +6,7 @@ enum Problem: String {
     case nonDecreasingArray = "nonDecreasing"
     case validPalindrome = "validPalindrome"
     case flippingAnImage = "flippingAnImage"
+	case maximumProductOfThreeNumbers = "maximumProductOfThreeNumbers"
 }
 
 class Solution {
@@ -26,15 +27,23 @@ class Solution {
 		case .minimumMovesToEqual:
 			print("Example: [1, 2, 3]")
 			print(Solution().minMoves([1, 2, 3]))
+			break
         case .nonDecreasingArray:
             print("Example: [4, 2, 3]")
             print(Solution().nonDecreasing([4, 2, 3]))
+			break
         case .validPalindrome:
             print("Example: A man, a plan, a canal: Panama")
             print(Solution().isPalindrome("A man, a plan, a canal: Panama"))
+			break
         case .flippingAnImage:
             print("Example: [[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]")
             print(Solution().flipAndInvertImage([[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]))
+			break
+		case .maximumProductOfThreeNumbers:
+			print("Example: [1,2,3,4]")
+			print(Solution().maximumProduct([1,2,3,4]))
+			break
         }
     }
 }
