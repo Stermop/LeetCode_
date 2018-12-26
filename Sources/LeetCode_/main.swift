@@ -7,6 +7,7 @@ enum Problem: String {
     case validPalindrome = "validPalindrome"
     case flippingAnImage = "flippingAnImage"
 	case maximumProductOfThreeNumbers = "maximumProductOfThreeNumbers"
+    case distributeCandies = "distributeCandies"
 }
 
 class Solution {
@@ -41,9 +42,13 @@ class Solution {
             print(Solution().flipAndInvertImage([[1,1,0,0],[1,0,0,1],[0,1,1,1],[1,0,1,0]]))
 			break
 		case .maximumProductOfThreeNumbers:
-			print("Example: [1,2,3,4]")
-			print(Solution().maximumProduct([1,2,3,4]))
+			print("Example: [1, 2, 3, 4]")
+			print(Solution().maximumProduct([1, 2, 3, 4]))
 			break
+        case .distributeCandies:
+            print("Example: [1, 1, 2, 2, 3, 3]")
+            print(Solution().distributeCandies([1, 1, 2, 2, 3, 3]))
+            break
         }
     }
 }
