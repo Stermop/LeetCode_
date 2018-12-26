@@ -31,3 +31,5 @@ swift run LeetCode_ addDigits
 - [628. Maximum Product of Three Numbers](https://leetcode.com/problems/maximum-product-of-three-numbers/) · [Submission](Sources/LeetCode_/628.MaximumProductOfThreeNumbers/MaximumProductOfThreeNumbers.swift)
 
 - [575. Distribute Candies](https://leetcode.com/problems/distribute-candies/) · [Submission](Sources/LeetCode_/575.DistributeCandies/DistributeCandies.swift)
+
+- [872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) · [Submission](Sources/LeetCode_/872.Leaf-SimilarTrees/Leaf-SimilarTrees.swift)

@@ -8,6 +8,7 @@ enum Problem: String {
     case flippingAnImage = "flippingAnImage"
 	case maximumProductOfThreeNumbers = "maximumProductOfThreeNumbers"
     case distributeCandies = "distributeCandies"
+	case leafSimilarTrees = "leafSimilarTrees"
 }
 
 class Solution {
@@ -49,6 +50,35 @@ class Solution {
             print("Example: [1, 1, 2, 2, 3, 3]")
             print(Solution().distributeCandies([1, 1, 2, 2, 3, 3]))
             break
+		case .leafSimilarTrees:
+			print("Example(前序遍历):")
+			print("[3, 5, 6, 2, 7, 4, 1, 9, 8]")
+			print("[3, 6, 1, 2, 7, 4, 5, 9, 8]")
+			
+			let val1 = TreeNode(1); let val11 = TreeNode(1)
+			let val2 = TreeNode(2); let val12 = TreeNode(2)
+			let val3 = TreeNode(3); let val13 = TreeNode(3)
+			let val4 = TreeNode(4); let val14 = TreeNode(4)
+			let val5 = TreeNode(5); let val15 = TreeNode(5)
+			let val6 = TreeNode(6); let val16 = TreeNode(6)
+			let val7 = TreeNode(7); let val17 = TreeNode(7)
+			let val8 = TreeNode(8); let val18 = TreeNode(8)
+			let val9 = TreeNode(9); let val19 = TreeNode(9)
+			
+			val3.left = val5; val3.right = val1
+			val5.left = val6; val5.right = val2
+			val2.left = val7; val2.right = val4
+			val1.left = val9; val1.right = val8
+			
+			val13.left = val16; val13.right = val11
+			val11.left = val12; val11.right = val15
+			val12.left = val17; val12.right = val14
+			val15.left = val19; val15.right = val18
+			
+			print(Solution().leafSimilar(val3, val13))
+			
+			break
+			
         }
     }
 }
