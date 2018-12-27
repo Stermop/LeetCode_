@@ -9,6 +9,7 @@ enum Problem: String {
 	case maximumProductOfThreeNumbers = "maximumProductOfThreeNumbers"
     case distributeCandies = "distributeCandies"
 	case leafSimilarTrees = "leafSimilarTrees"
+	case teemoAttacking = "teemoAttacking"
 }
 
 class Solution {
@@ -78,7 +79,10 @@ class Solution {
 			print(Solution().leafSimilar(val3, val13))
 			
 			break
-			
+		case .teemoAttacking:
+			print("Example: [1, 4], 2")
+			print(Solution().findPoisonedDuration([1, 4], 2))
+			break
         }
     }
 }
