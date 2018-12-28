@@ -35,3 +35,5 @@ swift run LeetCode_ addDigits
 - [872. Leaf-Similar Trees](https://leetcode.com/problems/leaf-similar-trees/) · [Submission](Sources/LeetCode_/872.Leaf-SimilarTrees/Leaf-SimilarTrees.swift)
 
 - [495. Teemo Attacking](https://leetcode.com/problems/teemo-attacking/) · [Submission](Sources/LeetCode_/495.TeemoAttacking/TeemoAttacking.swift)
+
+- [88. Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/) · [Submission](Sources/LeetCode_/88.MergeSortedArray/MergeSortedArray.swift)

@@ -10,6 +10,7 @@ enum Problem: String {
     case distributeCandies = "distributeCandies"
 	case leafSimilarTrees = "leafSimilarTrees"
 	case teemoAttacking = "teemoAttacking"
+	case mergeSortedArray = "mergeSortedArray"
 }
 
 class Solution {
@@ -82,6 +83,14 @@ class Solution {
 		case .teemoAttacking:
 			print("Example: [1, 4], 2")
 			print(Solution().findPoisonedDuration([1, 4], 2))
+			break
+		case .mergeSortedArray:
+			var nums1 = [1, 2, 3, 0, 0, 0]
+			Solution().merge2(&nums1, 3, [2, 5, 6], 3)
+			print("Example:")
+			print("nums1: [1, 2, 3, 0, 0, 0], 3")
+			print("nums2: [2, 5, 6], 3 \n")
+			print("result:\(nums1)")
 			break
         }
     }
