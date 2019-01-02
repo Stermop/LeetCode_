@@ -37,3 +37,5 @@ swift run LeetCode_ addDigits
 - [495. Teemo Attacking](https://leetcode.com/problems/teemo-attacking/) · [Submission](Sources/LeetCode_/495.TeemoAttacking/TeemoAttacking.swift)
 
 - [88. Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/) · [Submission](Sources/LeetCode_/88.MergeSortedArray/MergeSortedArray.swift)
+
+- [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) · [Submission](Sources/LeetCode_/209.MinimumSizeSubarraySum/MinimumSizeSubarraySum.swift)
