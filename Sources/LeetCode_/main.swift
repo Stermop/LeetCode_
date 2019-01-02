@@ -11,6 +11,7 @@ enum Problem: String {
 	case leafSimilarTrees = "leafSimilarTrees"
 	case teemoAttacking = "teemoAttacking"
 	case mergeSortedArray = "mergeSortedArray"
+	case minimumSizeSubarraySum = "minimumSizeSubarraySum"
 }
 
 class Solution {
@@ -91,6 +92,10 @@ class Solution {
 			print("nums1: [1, 2, 3, 0, 0, 0], 3")
 			print("nums2: [2, 5, 6], 3 \n")
 			print("result:\(nums1)")
+			break
+		case .minimumSizeSubarraySum:
+			print("Example: 7, [2, 3, 1, 2, 4, 3]")
+			print(Solution().minSubArrayLen(7, [2, 3, 1, 2, 4, 3]))
 			break
         }
     }
