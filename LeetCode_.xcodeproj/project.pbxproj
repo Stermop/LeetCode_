@@ -16,6 +16,7 @@
 		73F806E221DCC87A00FAFEFA /* MinimumSizeSubarraySum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73F806E121DCC87A00FAFEFA /* MinimumSizeSubarraySum.swift */; };
 		91673B1721D31A5F005BA45F /* DistributeCandies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91673B1621D31A5F005BA45F /* DistributeCandies.swift */; };
 		9190F3CA21D0734C00BD8541 /* NonDecreasing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190F3C921D0734C00BD8541 /* NonDecreasing.swift */; };
+		919A416621DCE84400FF1B7D /* LongestCommonPrefix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A416521DCE84400FF1B7D /* LongestCommonPrefix.swift */; };
 		919E620E21CFAF3300DDEDC4 /* MinimumMovesToEqual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919E620D21CFAF3300DDEDC4 /* MinimumMovesToEqual.swift */; };
 		91B4386421D0F0B800C7529A /* ValidPalindrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4386321D0F0B800C7529A /* ValidPalindrome.swift */; };
 		91B4386921D1C91200C7529A /* FlippingAnImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B4386821D1C91200C7529A /* FlippingAnImage.swift */; };
@@ -34,6 +35,8 @@
 		73F806E121DCC87A00FAFEFA /* MinimumSizeSubarraySum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinimumSizeSubarraySum.swift; sourceTree = "<group>"; };
 		91673B1621D31A5F005BA45F /* DistributeCandies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistributeCandies.swift; sourceTree = "<group>"; };
 		9190F3C921D0734C00BD8541 /* NonDecreasing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NonDecreasing.swift; sourceTree = "<group>"; };
+		919A416521DCE84400FF1B7D /* LongestCommonPrefix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LongestCommonPrefix.swift; sourceTree = "<group>"; };
+		919A416721DCE85B00FF1B7D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		919E620D21CFAF3300DDEDC4 /* MinimumMovesToEqual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumMovesToEqual.swift; sourceTree = "<group>"; };
 		91B4386321D0F0B800C7529A /* ValidPalindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindrome.swift; sourceTree = "<group>"; };
 		91B4386821D1C91200C7529A /* FlippingAnImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlippingAnImage.swift; sourceTree = "<group>"; };
@@ -94,12 +97,12 @@
 			path = 495.TeemoAttacking;
 			sourceTree = "<group>";
 		};
-		73E8020321D5C133009DB3BE /* 88.MergeSortedArray */ = {
+		73E8020321D5C133009DB3BE /* 088.MergeSortedArray */ = {
 			isa = PBXGroup;
 			children = (
 				73E8020421D5C151009DB3BE /* MergeSortedArray.swift */,
 			);
-			path = 88.MergeSortedArray;
+			path = 088.MergeSortedArray;
 			sourceTree = "<group>";
 		};
 		73F806E021DCC87A00FAFEFA /* 209.MinimumSizeSubarraySum */ = {
@@ -124,6 +127,14 @@
 				9190F3C921D0734C00BD8541 /* NonDecreasing.swift */,
 			);
 			path = "665.Non-decreasingArray";
+			sourceTree = "<group>";
+		};
+		919A416421DCE84400FF1B7D /* 014.LongestCommonPrefix */ = {
+			isa = PBXGroup;
+			children = (
+				919A416521DCE84400FF1B7D /* LongestCommonPrefix.swift */,
+			);
+			path = 014.LongestCommonPrefix;
 			sourceTree = "<group>";
 		};
 		919E620C21CFAEFD00DDEDC4 /* 453.MinimumMovesToEqualArrayElements */ = {
@@ -161,8 +172,9 @@
 		91CE9FB721CA075E006B3498 /* LeetCode_ */ = {
 			isa = PBXGroup;
 			children = (
+				919A416421DCE84400FF1B7D /* 014.LongestCommonPrefix */,
 				73F806E021DCC87A00FAFEFA /* 209.MinimumSizeSubarraySum */,
-				73E8020321D5C133009DB3BE /* 88.MergeSortedArray */,
+				73E8020321D5C133009DB3BE /* 088.MergeSortedArray */,
 				734479C721D46C49009EB471 /* 495.TeemoAttacking */,
 				734479A721D34A95009EB471 /* 872.Leaf-SimilarTrees */,
 				91673B1521D31A4B005BA45F /* 575.DistributeCandies */,
@@ -205,6 +217,7 @@
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				919A416721DCE85B00FF1B7D /* README.md */,
 				OBJ_6 /* Package.swift */,
 				91CE9FB621CA075E006B3498 /* Sources */,
 				OBJ_10 /* Tests */,
@@ -277,6 +290,7 @@
 			buildActionMask = 0;
 			files = (
 				91673B1721D31A5F005BA45F /* DistributeCandies.swift in Sources */,
+				919A416621DCE84400FF1B7D /* LongestCommonPrefix.swift in Sources */,
 				73E8020521D5C151009DB3BE /* MergeSortedArray.swift in Sources */,
 				91CE9FBC21CA075E006B3498 /* main.swift in Sources */,
 				919E620E21CFAF3300DDEDC4 /* MinimumMovesToEqual.swift in Sources */,
