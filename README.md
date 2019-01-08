@@ -41,3 +41,5 @@ swift run LeetCode_ addDigits
 - [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum/) · [Submission](Sources/LeetCode_/209.MinimumSizeSubarraySum/MinimumSizeSubarraySum.swift)
 
 - [014. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) · [Submission](Sources/LeetCode_/014.LongestCommonPrefix/LongestCommonPrefix.swift)
+
+- [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) · [Submission](Sources/LeetCode_/881.BoatstoSavePeople/BoatstoSavePeople.swift)
