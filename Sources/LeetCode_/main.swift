@@ -13,6 +13,7 @@ enum Problem: String {
 	case mergeSortedArray = "mergeSortedArray"
 	case minimumSizeSubarraySum = "minimumSizeSubarraySum"
     case longestCommonPrefix = "longestCommonPrefix"
+	case boatstoSavePeople = "boatstoSavePeople"
 }
 
 class Solution {
@@ -102,6 +103,11 @@ class Solution {
             print("Example: [\"flower\",\"flow\",\"flight\"]")
             print(Solution().longestCommonPrefix(["flower", "flow", "flight"]))
             break
+		case .boatstoSavePeople:
+			print("Example:")
+			print("people = [3,5,3,4], limit = 5")
+			print(Solution().numRescueBoats([3, 5, 3, 4], 5))
+			break
         }
     }
 }
