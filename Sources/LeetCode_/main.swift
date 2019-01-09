@@ -14,6 +14,7 @@ enum Problem: String {
 	case minimumSizeSubarraySum = "minimumSizeSubarraySum"
     case longestCommonPrefix = "longestCommonPrefix"
 	case boatstoSavePeople = "boatstoSavePeople"
+	case wiggleSubsequence = "wiggleSubsequence"
 }
 
 class Solution {
@@ -108,7 +109,11 @@ class Solution {
 			print("people = [3,5,3,4], limit = 5")
 			print(Solution().numRescueBoats([3, 5, 3, 4], 5))
 			break
-        }
+		case.wiggleSubsequence:
+			print("Example: [1,17,5,10,13,15,10,5,16,8]")
+			print(Solution().wiggleMaxLength([1,17,5,10,13,15,10,5,16,8]))
+			break
+		}
     }
 }
 

@@ -43,3 +43,5 @@ swift run LeetCode_ addDigits
 - [014. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix/) · [Submission](Sources/LeetCode_/014.LongestCommonPrefix/LongestCommonPrefix.swift)
 
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) · [Submission](Sources/LeetCode_/881.BoatstoSavePeople/BoatstoSavePeople.swift)
+
+- [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) · [Submission](Sources/LeetCode_/376.WiggleSubsequence/WiggleSubsequence.swift)
