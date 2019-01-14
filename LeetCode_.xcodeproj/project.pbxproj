@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		431CAC1521ECA6DB00526159 /* MajorityElementII.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431CAC1421ECA6DB00526159 /* MajorityElementII.swift */; };
 		7300BBC621CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */; };
 		7300BBD821CBA1A9004706BA /* AddDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7300BBD721CBA1A9004706BA /* AddDigits.swift */; };
 		7302E17821E5D5290032D51C /* WiggleSubsequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7302E17721E5D5290032D51C /* WiggleSubsequence.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		431CAC1421ECA6DB00526159 /* MajorityElementII.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MajorityElementII.swift; sourceTree = "<group>"; };
 		7300BBC521CB2D21004706BA /* ShortestUnsortedContinuousSubarray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortestUnsortedContinuousSubarray.swift; sourceTree = "<group>"; };
 		7300BBD721CBA1A9004706BA /* AddDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDigits.swift; sourceTree = "<group>"; };
 		7302E17721E5D5290032D51C /* WiggleSubsequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WiggleSubsequence.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		431CAC1321ECA6DB00526159 /* 229.MajorityElementII */ = {
+			isa = PBXGroup;
+			children = (
+				431CAC1421ECA6DB00526159 /* MajorityElementII.swift */,
+			);
+			path = 229.MajorityElementII;
+			sourceTree = "<group>";
+		};
 		7300BBC421CB2C48004706BA /* 581.ShortestUnsortedContinuousSubarray */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +202,7 @@
 		91CE9FB721CA075E006B3498 /* LeetCode_ */ = {
 			isa = PBXGroup;
 			children = (
+				431CAC1321ECA6DB00526159 /* 229.MajorityElementII */,
 				7302E17621E5D49F0032D51C /* 376.WiggleSubsequence */,
 				919A416421DCE84400FF1B7D /* 014.LongestCommonPrefix */,
 				73F48DBC21E4935900938DEC /* 881.BoatstoSavePeople */,
@@ -318,6 +329,7 @@
 				919E620E21CFAF3300DDEDC4 /* MinimumMovesToEqual.swift in Sources */,
 				73F806E221DCC87A00FAFEFA /* MinimumSizeSubarraySum.swift in Sources */,
 				9190F3CA21D0734C00BD8541 /* NonDecreasing.swift in Sources */,
+				431CAC1521ECA6DB00526159 /* MajorityElementII.swift in Sources */,
 				91B4386921D1C91200C7529A /* FlippingAnImage.swift in Sources */,
 				734479C921D46C5E009EB471 /* TeemoAttacking.swift in Sources */,
 				7300BBD821CBA1A9004706BA /* AddDigits.swift in Sources */,

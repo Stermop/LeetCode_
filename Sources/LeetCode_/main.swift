@@ -15,6 +15,7 @@ enum Problem: String {
     case longestCommonPrefix = "longestCommonPrefix"
 	case boatstoSavePeople = "boatstoSavePeople"
 	case wiggleSubsequence = "wiggleSubsequence"
+	case majorityElementII = "majorityElementII"
 }
 
 class Solution {
@@ -112,6 +113,10 @@ class Solution {
 		case.wiggleSubsequence:
 			print("Example: [1,17,5,10,13,15,10,5,16,8]")
 			print(Solution().wiggleMaxLength([1,17,5,10,13,15,10,5,16,8]))
+			break
+		case .majorityElementII:
+			print("Example: [1,1,1,3,3,2,2,2]")
+			print(Solution().majorityElement([1,1,1,3,3,2,2,2]))
 			break
 		}
     }
