@@ -45,3 +45,5 @@ swift run LeetCode_ addDigits
 - [881. Boats to Save People](https://leetcode.com/problems/boats-to-save-people/) · [Submission](Sources/LeetCode_/881.BoatstoSavePeople/BoatstoSavePeople.swift)
 
 - [376. Wiggle Subsequence](https://leetcode.com/problems/wiggle-subsequence/) · [Submission](Sources/LeetCode_/376.WiggleSubsequence/WiggleSubsequence.swift)
+
+- [229. Majority Element II](https://leetcode.com/problems/majority-element-ii/) · [Submission](Sources/LeetCode_/229.MajorityElementII/MajorityElementII.swift)
