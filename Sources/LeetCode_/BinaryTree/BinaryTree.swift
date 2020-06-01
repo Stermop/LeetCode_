@@ -83,3 +83,19 @@ extension Solution {
     }
     
 }
+
+// MARK: - 二叉树的镜像
+/// https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/
+
+extension Solution {
+    
+    /// 二叉树的镜像
+    func mirrorTree(_ root: TreeNode?) -> TreeNode? {
+        guard let tree = root else { return nil }
+        let temp = tree.left
+        tree.left = mirrorTree(tree.right)
+        tree.right = mirrorTree(temp)
+        return tree
+    }
+    
+}
