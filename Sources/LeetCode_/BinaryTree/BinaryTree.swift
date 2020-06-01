@@ -98,4 +98,23 @@ extension Solution {
         return tree
     }
     
+    /// 二叉树的镜像
+    func mirrorTreeWithStack(_ root: TreeNode?) -> TreeNode? {
+        guard let tree = root else { return nil }
+        var stack = [tree]
+        while !stack.isEmpty {
+            let node = stack.popLast()
+            if let left = node?.left {
+                stack.append(left)
+            }
+            if let right = node?.right {
+                stack.append(right)
+            }
+            let temp = node?.left
+            node?.left = node?.right
+            node?.right = temp
+        }
+        return tree
+    }
+    
 }
