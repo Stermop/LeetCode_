@@ -118,3 +118,37 @@ extension Solution {
     }
     
 }
+
+// MARK: - 单值二叉树
+/// https://leetcode-cn.com/problems/univalued-binary-tree/
+
+extension Solution {
+    
+    /// 单值二叉树
+    func isUnivalTree(_ root: TreeNode?) -> Bool {
+        guard let tree = root else { return true }
+        if let right = tree.right, right.val != tree.val { return false }
+        if let left = tree.left, left.val != tree.val { return false }
+        return isUnivalTree(tree.left) && isUnivalTree(tree.right)
+    }
+    
+    /// 单值二叉树
+    func isUnivalTreeWithStack(_ root: TreeNode?) -> Bool {
+        guard let tree = root else { return true }
+        var stack = [tree]
+        while !stack.isEmpty {
+            let node = stack.popLast()
+            if let left = node?.left {
+                if left.val != tree.val { return false }
+                stack.append(left)
+            }
+            if let right = node?.right {
+                if right.val != tree.val { return false }
+                stack.append(right)
+            }
+        }
+        return true
+    }
+    
+}
+
