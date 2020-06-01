@@ -54,7 +54,6 @@ extension Solution {
 
 // MARK: - 平衡二叉树
 /// https://leetcode-cn.com/problems/ping-heng-er-cha-shu-lcof/
-
 extension Solution {
     
     /// 平衡二叉树
@@ -86,7 +85,6 @@ extension Solution {
 
 // MARK: - 二叉树的镜像
 /// https://leetcode-cn.com/problems/er-cha-shu-de-jing-xiang-lcof/
-
 extension Solution {
     
     /// 二叉树的镜像
@@ -121,7 +119,6 @@ extension Solution {
 
 // MARK: - 单值二叉树
 /// https://leetcode-cn.com/problems/univalued-binary-tree/
-
 extension Solution {
     
     /// 单值二叉树
@@ -149,6 +146,60 @@ extension Solution {
         }
         return true
     }
+    
+}
+
+
+// MARK: - 对称的二叉树
+/// https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof/
+extension Solution {
+    
+    ///对称的二叉树
+    func isSymmetric(_ root: TreeNode?) -> Bool {
+        guard let tree = root else { return true }
+        var queue: [TreeNode] = [tree]
+        while !queue.isEmpty {
+            // 生成一层的值数组
+            let values: [Int?] = queue.reduce([]) { $0 + [$1.left?.val, $1.right?.val] }
+            guard values.count.isMultiple(of: 2) else { return false }
+            
+            // 检查是否对称
+            var result = true
+            var index = 0
+            let times = values.count / 2
+            while index < times {
+                if values[index] != values[values.count - 1 - index] {
+                    result = false
+                    break
+                }
+                index += 1
+            }
+            
+            // 继续检查下一层
+            guard result else { return false }
+            var temp: [TreeNode] = []
+            queue.forEach { (node) in
+                if let left = node.left { temp.append(left)  }
+                if let right = node.right { temp.append(right) }
+            }
+            queue = temp
+        }
+        return true
+    }
+    
+    ///对称的二叉树 查看解答 递归
+    func isSymmetricRec(_ root: TreeNode?) -> Bool {
+        
+        func rec(_ left: TreeNode?, right: TreeNode?) -> Bool {
+            if left == nil && right == nil { return true }
+            guard let l = left?.val, let r = right?.val, l == r else { return false }
+            return rec(left?.left, right: right?.right) && rec(left?.right, right: right?.left)
+        }
+        
+        guard let tree = root else { return true }
+        return rec(tree.left, right: tree.right)
+    }
+    
     
 }
 
