@@ -228,8 +228,8 @@ extension Solution {
     /// 二叉树的坡度
     func findTilt_LeetCode(_ root: TreeNode?) -> Int {
         var tilt = 0
-        @discardableResult
         // 求和的过程中把坡度进行累加
+        @discardableResult
         func traverse(_ root: TreeNode?) -> Int {
             guard let tree = root else { return 0 }
             let left = traverse(tree.left)
