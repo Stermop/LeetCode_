@@ -203,3 +203,43 @@ extension Solution {
     
 }
 
+
+// MARK: - 二叉树的坡度
+/// https://leetcode-cn.com/problems/binary-tree-tilt/
+extension Solution {
+    
+    // 一个树的节点的坡度定义即为，该节点左子树的结点之和和右子树结点之和的差的绝对值。空结点的的坡度是0。
+    // 整个树的坡度就是其所有节点的坡度之和。
+    
+    /// 二叉树的坡度
+    func findTilt(_ root: TreeNode?) -> Int {
+        
+        // 求和
+        func sum(_ root: TreeNode?) -> Int {
+            guard let tree = root else { return 0 }
+            return tree.val + sum(tree.left) + sum(tree.right)
+        }
+        
+        // 坡度 = 当前节点的坡度 + 左子节点的坡度 + 右子节点的坡度
+        guard let tree = root else { return 0 }
+        return abs(sum(tree.left) - sum(tree.right)) + findTilt(tree.left) + findTilt(tree.right)
+    }
+    
+    /// 二叉树的坡度
+    func findTilt_LeetCode(_ root: TreeNode?) -> Int {
+        var tilt = 0
+        @discardableResult
+        // 求和的过程中把坡度进行累加
+        func traverse(_ root: TreeNode?) -> Int {
+            guard let tree = root else { return 0 }
+            let left = traverse(tree.left)
+            let right = traverse(tree.right)
+            tilt += abs(left - right)           // - 精髓
+            return left + right + tree.val
+        }
+        traverse(root)
+        return tilt
+    }
+    
+}
+
