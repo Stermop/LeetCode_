@@ -243,3 +243,27 @@ extension Solution {
     
 }
 
+
+// MARK: - 二叉树的直径
+/// https://leetcode-cn.com/problems/diameter-of-binary-tree/
+extension Solution {
+    
+    /// 二叉树的直径
+    func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
+        var diameter = 0
+        
+        // 这个递归只是为了求深度, 在求深度的过程中, 去找出最大的直径:()
+        @discardableResult
+        func recMax(_ root: TreeNode?) -> Int {
+            guard let tree = root else { return 0 }
+            let left = recMax(tree.left)
+            let right = recMax(tree.right)
+            diameter = max(diameter, left + right)
+            return max(left, right) + 1
+        }
+        
+        recMax(root)
+        return diameter
+    }
+    
+}
