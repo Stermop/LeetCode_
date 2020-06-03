@@ -252,7 +252,7 @@ extension Solution {
     func diameterOfBinaryTree(_ root: TreeNode?) -> Int {
         var diameter = 0
         
-        // 这个递归只是为了求深度, 在求深度的过程中, 去找出最大的直径:()
+        // 这个递归只是为了求深度, 在求深度的过程中, 去找出最大的直径:(左子树的高度 + 右子树的高度 的最大值)
         @discardableResult
         func recMax(_ root: TreeNode?) -> Int {
             guard let tree = root else { return 0 }
