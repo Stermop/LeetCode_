@@ -267,3 +267,52 @@ extension Solution {
     }
     
 }
+
+// MARK: - 最大二叉树
+/// https://leetcode-cn.com/problems/maximum-binary-tree/
+extension Solution {
+    
+//    二叉树的根是数组中的最大元素。
+//    左子树是通过数组中最大值左边部分构造出的最大二叉树。
+//    右子树是通过数组中最大值右边部分构造出的最大二叉树。
+    
+    /// 最大二叉树
+    func constructMaximumBinaryTree(_ nums: [Int]) -> TreeNode? {
+        guard !nums.isEmpty else { return nil }
+        var maxIndex = 0
+        var maxValue = nums[maxIndex]
+        nums.enumerated().forEach {
+            if $0.element > maxValue {
+                maxValue = $0.element
+                maxIndex = $0.offset
+            }
+        }
+        let node = TreeNode(maxValue)
+        node.left  = constructMaximumBinaryTree(Array(nums[0..<maxIndex]))
+        node.right = constructMaximumBinaryTree(Array(nums[maxIndex+1..<nums.count]))
+        return node
+    }
+    
+    /// 最大二叉树
+    func constructMaximumBinaryTree_LeetCode(_ nums: [Int]) -> TreeNode? {
+
+        func constructMaximumBinaryTree(_ nums: [Int], _ start: Int, _ end: Int) -> TreeNode? {
+            if start > end { return nil }
+
+            var maxIndex = start
+            for i in start...end {
+                if nums[maxIndex] < nums[i] {
+                    maxIndex = i
+                }
+            }
+
+            let root = TreeNode(nums[maxIndex])
+            root.left = constructMaximumBinaryTree(nums, start, maxIndex - 1)
+            root.right = constructMaximumBinaryTree(nums, maxIndex + 1, end)
+            return root
+        }
+
+        return constructMaximumBinaryTree(nums, 0, nums.count - 1)
+    }
+    
+}
