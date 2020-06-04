@@ -316,3 +316,32 @@ extension Solution {
     }
     
 }
+
+// MARK: - 二叉树的堂兄弟节点
+/// https://leetcode-cn.com/problems/cousins-in-binary-tree/
+extension Solution {
+    
+    // 如果二叉树的两个节点深度相同，但父节点不同，则它们是一对堂兄弟节点。
+    
+    func isCousins(_ root: TreeNode?, _ x: Int, _ y: Int) -> Bool {
+        var depthDict: [Int : Int] = [:]
+        var parentDict: [Int : Int] = [:]
+        
+        func rec(_ root: TreeNode?, _ parent: TreeNode?) {
+            guard let tree = root else { return }
+            
+            let parentVal = parent?.val ?? -1
+            let depth = depthDict[parentVal] ?? -1
+            
+            depthDict[tree.val]  = depth + 1
+            parentDict[tree.val] = parentVal
+            
+            rec(tree.left, tree)
+            rec(tree.right, tree)
+        }
+        
+        rec(root, nil)
+        return depthDict[x] == depthDict[y] && parentDict[x] != parentDict[y]
+    }
+    
+}
