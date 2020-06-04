@@ -345,3 +345,26 @@ extension Solution {
     }
     
 }
+
+
+// MARK: - 修剪二叉搜索树
+/// https://leetcode-cn.com/problems/trim-a-binary-search-tree/submissions/
+extension Solution {
+    
+    // 给定一个二叉搜索树，同时给定最小边界L 和最大边界 R。通过修剪二叉搜索树，使得所有节点的值在[L, R]中 (R>=L)
+    
+    /// 修剪二叉搜索树
+    func trimBST(_ root: TreeNode?, _ L: Int, _ R: Int) -> TreeNode? {
+        guard let tree = root else { return nil }
+        if tree.val > R {
+            return trimBST(tree.left, L, R)
+        }
+        if tree.val < L {
+            return trimBST(tree.right, L, R)
+        }
+        tree.left = trimBST(tree.left, L, R)
+        tree.right = trimBST(tree.right, L, R)
+        return tree
+    }
+    
+}
