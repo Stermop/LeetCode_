@@ -348,7 +348,7 @@ extension Solution {
 
 
 // MARK: - 修剪二叉搜索树
-/// https://leetcode-cn.com/problems/trim-a-binary-search-tree/submissions/
+/// https://leetcode-cn.com/problems/trim-a-binary-search-tree/
 extension Solution {
     
     // 给定一个二叉搜索树，同时给定最小边界L 和最大边界 R。通过修剪二叉搜索树，使得所有节点的值在[L, R]中 (R>=L)
@@ -366,5 +366,31 @@ extension Solution {
         tree.right = trimBST(tree.right, L, R)
         return tree
     }
+    
+}
+
+// MARK: - 把二叉搜索树转换为累加树
+/// https://leetcode-cn.com/problems/convert-bst-to-greater-tree/
+extension Solution {
+    
+    // 使得每个节点的值是原来的节点值加上所有大于它的节点值之和。
+    
+    /// 把二叉搜索树转换为累加树 - 反序中序遍历
+    func convertBST(_ root: TreeNode?) -> TreeNode? {
+        var sum: Int = 0
+    
+        func rec(_ root: TreeNode?) {
+            guard let tree = root else { return }
+            rec(tree.right)
+            sum += tree.val
+            tree.val = sum
+            rec(tree.left)
+        }
+        
+        rec(root)
+        return root
+    }
+    
+    // TODO LeetCode 上还有两种方法
     
 }
