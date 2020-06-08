@@ -394,3 +394,88 @@ extension Solution {
     // TODO LeetCode 上还有两种方法
     
 }
+
+
+// MARK: - 二叉搜索树中的搜索
+/// https://leetcode-cn.com/problems/search-in-a-binary-search-tree/
+extension Solution {
+    
+    // 返回以该节点为根的子树。 如果节点不存在，则返回 NULL
+    
+    /// 二叉搜索树中的搜索
+    func searchBST(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+        guard let tree = root else { return nil }
+        if val == tree.val {
+            return tree
+        } else if val > tree.val {
+            return searchBST(tree.right, val)
+        } else {
+            return searchBST(tree.left, val)
+        }
+    }
+    
+    /// 二叉搜索树中的搜索 - 迭代
+    func searchBST_BFS(_ root: TreeNode?, _ val: Int) -> TreeNode? {
+        var tree = root
+        while tree != nil && tree?.val != val {
+            tree = tree!.val > val ? tree?.left : tree?.right
+        }
+        return tree
+    }
+    
+}
+
+
+// MARK: - 二叉搜索树的范围和
+/// https://leetcode-cn.com/problems/range-sum-of-bst/
+extension Solution {
+    
+    // 返回 L 和 R（含）之间的所有结点的值的和
+    
+    /// 二叉搜索树的范围和
+    func rangeSumBST(_ root: TreeNode?, _ L: Int, _ R: Int) -> Int {
+        var sum = 0
+        
+        func rec(_ root: TreeNode?) {
+            guard let tree = root else { return }
+            if  L <= tree.val && tree.val <= R{
+                sum += tree.val
+            }
+            
+            if L < tree.val {
+                rec(tree.left)
+            }
+            
+            if tree.val < R {
+                rec(tree.right)
+            }
+        }
+        
+        rec(root)
+        return sum
+    }
+    
+    /// 二叉搜索树的范围和
+    func rangeSumBST_BFS(_ root: TreeNode?, _ L: Int, _ R: Int) -> Int {
+        guard let tree = root else { return 0 }
+        var sum = 0
+        var stack = [tree]
+        while !stack.isEmpty {
+            guard let node = stack.popLast() else { break }
+            if  L <= node.val && node.val <= R{
+                sum += node.val
+            }
+            
+            if let left = node.left, L < node.val {
+                stack.append(left)
+            }
+            
+            if let right = node.right, node.val < R {
+                stack.append(right)
+            }
+        }
+        return sum
+    }
+    
+}
+
