@@ -143,9 +143,25 @@ extension Solution {
 /// https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/
 extension Solution {
     
+    // Tips 中序遍历是递增序列
+    // 根据以上性质，易得二叉搜索树的“中序遍历倒序”为 递减序列 。
+    
     // 二叉搜索树的第k大节点
     func kthLargest(_ root: TreeNode?, _ k: Int) -> Int {
+        var value = -1
+        var count = k
         
+        func rec(_ root: TreeNode?) {
+            guard let tree = root else { return }
+            rec(tree.right)
+            if count == 0 { return }
+            count -= 1
+            if count == 0 { value = tree.val }
+            rec(tree.left)
+        }
+        
+        rec(root)
+        return value
     }
 
 }
